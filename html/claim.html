@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Claim</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="./r.png">
+
+    <style>
+      body{
+        background-image:url('./Interstellar.png');
+      }
+      
+      .text{
+        color:white;
+      }
+
+      #icon_box{
+        float:left;
+        position: relative;
+        left:30px;
+        top:15px; 
+      }
+
+      #title_box{
+        float:left;
+        position: relative;
+        left:50px;
+        top:20px; 
+      }
+
+      #introduce_box{
+        border:3px solid #484d53;
+        width: 900px;
+        height: 400px;
+        overflow-y:auto;
+
+        line-height: 3rem;
+        font-size: 20px;
+        position: absolute;
+
+        top: 95px;
+        left: 50%;
+        transform: translate(-50%, 0); 
+      }
+
+      .btn-secondary{
+        height: 56px;
+        border-radius: 28px;
+      }
+
+      #connect_box{
+        float:right;
+        position: relative;
+        top:15px; 
+        left:-30px;
+      }
+
+      #add_token_box{
+        float:right;
+        position: relative;
+        top:15px; 
+        left:-50px;
+      }
+
+      #claim_box{
+        float:right;
+        position: relative;
+        top:15px; 
+        left:-70px;
+        /* position: absolute;
+        bottom: 160px;
+        left: 50%;
+        transform: translate(-50%, 0); */
+      }
+
+      #claim_introduce_text_box{
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      #communication_introduced{
+        font-size: 21px;
+        
+        position: absolute;
+        bottom: 50px;
+        
+        left: 50%;
+        transform: translate(-50%, 0);
+
+      }
+
+      #eth_address_text{
+        font-size: 18px;
+      }
+
+      #address_text_box{
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translate(-50%, 0);
+      }
+
+      .email_box{
+        bottom: -170px
+      }
+
+      #email_text_box{
+        position: absolute;
+        left: 80%;
+      }
+
+      #eth{
+        color: orange;
+      }
+
+      #email_img_box{
+        position: absolute;
+        left: 75%;
+      }
+
+      .twitter_box{
+        bottom: -260px;
+        /* left: 5%; */
+      }
+
+      #twitter_text_box{
+        position: absolute;
+        left: 80%;
+      }
+
+      #twitter_img_box{
+        position: absolute;
+        left: 75%;
+      }
+
+      #contract_address_box{
+        position: absolute;
+        left: 64%;
+        bottom: -110px;
+      }
+
+    </style>
+
+   </head>
+  <body>
+
+    <div id="icon_box">
+      <img src="./r.png"
+      width="50"
+      height="50">
+    </div>
+    
+
+    <div id="title_box">
+      <h2 class="text">The RandomDao</h2>
+    </div>
+
+    <div id="connect_box">
+      <button id="connect" type="button" class="btn btn-secondary">connect</button>
+    </div>
+
+    <div id="add_token_box">
+      <button id="add_token" type="button" class="btn btn-secondary">add token</button>
+    </div>
+
+
+    <div id="claim_box">
+      <button id="claim" type="button" class="btn btn-secondary">claim</button>
+    </div>
+
+    <div id="claim_introduce_text_box">
+      <p id="claim_introduce_text" class="text"></p>
+    </div>
+    
+    <div id="introduce_box">
+        <p class="text" id="introduce">
+          Adults always say, "don't do this, don't do that." However, children always like to try new things, and so do I. So I create this token so that more people can do what they like to. Anyone who wants more free time can come and claim my airdrop.
+          <br><br>$RND tokens issued a total of 37.8 trillion, of which 12% was left to my mom and dad. It was their dedication and love over the past 12 years that gave me the opportunity to create this token. 38% of the total amount shall be subjected to liquidity mining. 50% of the total will be airdropped to 101010 people. Airdrop will be claimed within 1 year. After 1 year, the unclaimed tokens will be destroyed directly. In order to encourage more people to claim the airdrop, we will airdrop a larger share of tokens to the top 1010 people who come to claim for tokens. 
+          <br><br>When making this airdrop website, I encountered many difficulties, some because of the lack of information on the Internet, especially in the front-end connection to solidity. 
+          <br><br>Therefore, I will publish the source code of my website on GitHub for exchange and learning. I hope those who want to build Smart Contract can learn more conveniently from my code. 
+          <br><br>P.S.<br>
+          My dad always say there is no such thing as a free lunch, well, let's wait and see. Maybe $RND is.
+        </p>
+
+    </div>
+
+
+
+    <div id="allcommunication_introduced_box">
+
+      <div>
+        <p class="text" id="communication_introduced">If you'd like to support me, send <strong id="eth">ETH</strong> here. Thank you for your support! </p>
+      </div>
+
+
+      <div id="address_text_box">
+        <p class="text" id="eth_address_text">ETH address: 0x5F0bC7Aa98c15d1eA8C7e3a7AD3eE81D1f3DC260</p>
+      </div>
+
+
+      <div>
+        <div id="email_img_box" class="email_box">
+          <img id="email_img" src="./emali_img.png" width="60" height="40" >
+      </div>
+
+      <div id="email_text_box" class='email_box'>
+        <p class="text">2094676550@qq.com</p>
+      </div>
+
+      </div>
+
+
+      <div>
+        <div id="twitter_img_box" class="twitter_box">
+          <img id="twitter_img" src="./twitter.png" width="50" height="50" >
+        </div>
+
+        <div id="twitter_text_box" class='twitter_box'>
+          <p class="text">@therandomdao</p>
+        </div>
+
+      </div>
+
+      <div id="contract_address_box">
+        <p class="text">contract address: 0x1c7e83f8c581a967940dbfa7984744646ae46b29</p>
+      </div>
+
+        
+
+    </div>
+
+
+    <script type="module">
+      import { ethers } from "./js/ethers-5.2.esm.min.js";
+
+      var provider;
+      var signer;
+      var Address;
+      var Abi;
+
+      try{
+        Address = "0x1c7E83f8C581a967940DBfa7984744646AE46b29";
+        Abi = [{"inputs":[],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"owner","type":"address"},{"indexed":true,"internalType":"address","name":"spender","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Approval","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"from","type":"address"},{"indexed":true,"internalType":"address","name":"to","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"}],"name":"Transfer","type":"event"},{"inputs":[],"name":"all_claim","outputs":[{"internalType":"uint112","name":"","type":"uint112"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"owner","type":"address"},{"internalType":"address","name":"spender","type":"address"}],"name":"allowance","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"approve","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"account","type":"address"}],"name":"balanceOf","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"claim","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"decimals","outputs":[{"internalType":"uint8","name":"","type":"uint8"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"subtractedValue","type":"uint256"}],"name":"decreaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"spender","type":"address"},{"internalType":"uint256","name":"addedValue","type":"uint256"}],"name":"increaseAllowance","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"","type":"address"}],"name":"is_claim","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"max_token_number","outputs":[{"internalType":"uint112","name":"","type":"uint112"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"name","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"release_time","outputs":[{"internalType":"uint32","name":"","type":"uint32"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"return_claim_number","outputs":[{"internalType":"uint104","name":"","type":"uint104"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"_address","type":"address"}],"name":"return_is_claim","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"symbol","outputs":[{"internalType":"string","name":"","type":"string"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"totalSupply","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transfer","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"sender","type":"address"},{"internalType":"address","name":"recipient","type":"address"},{"internalType":"uint256","name":"amount","type":"uint256"}],"name":"transferFrom","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"uint256","name":"","type":"uint256"}],"name":"yet_claim_people","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"}];
+    
+        provider = new ethers.providers.Web3Provider(window.ethereum);
+        signer = provider.getSigner();
+
+        var is_connect = false;
+        var msg_address;
+      }
+      catch{
+      }
+
+
+      
+      var connect = document.getElementById("connect");
+      connect.addEventListener('click',async function(){
+        if(window.ethereum){
+          if(is_connect == false){
+              await provider.send("eth_requestAccounts", []);
+              msg_address = await signer.getAddress();
+              console.log(msg_address)
+              connect.innerHTML = msg_address;
+              is_connect = true;
+          }
+        }
+        else{
+          alert("Please install metamask wallet first");
+        }
+      },false)
+
+      var add_token = document.getElementById("add_token");
+      add_token.addEventListener('click',async function(){
+        if(is_connect == true){
+          const tokenaddress = '0x1c7E83f8C581a967940DBfa7984744646AE46b29';
+          const tokensymbol = 'RND';
+          const tokendecimals = 18;
+          const tokenimage = 'http://therandomdao.com/r.png';
+
+          const if_add = await ethereum.request({
+            method: 'wallet_watchAsset',
+            params: {
+            type: 'ERC20',
+            options: {
+                address: tokenaddress,
+                symbol: tokensymbol,
+                decimals: tokendecimals,
+                image: tokenimage,
+            },
+            },
+        });
+      }
+      else{
+        alert("Please connect the wallet first");
+      }
+
+      },false)
+
+
+      var claim = document.getElementById("claim");
+      claim.addEventListener('click',async function(){
+        if(is_connect == true){
+          var Contract = new ethers.Contract(Address, Abi, provider);
+          Contract = Contract.connect(signer);
+          var is_claim = (await Contract.return_is_claim(msg_address.toString()))
+
+          console.log(is_claim)
+          if(is_claim == false){
+            try{
+              var claim_number = (await Contract.return_claim_number()).toString();
+              claim_number = claim_number/1000000000000000000;
+              console.log(claim_number);
+              var claim_introduce_text = document.getElementById("claim_introduce_text");
+              claim_introduce_text.innerText = "you will receive:" + claim_number + " RND";
+
+              await Contract.functions.claim();
+              is_claim = true;
+
+              claim_introduce_text.innerText = "";
+            }
+            catch{
+              alert("Failed to acquire airdrop")
+              claim_introduce_text.innerText = "";
+            }
+            
+          }
+          else{
+            alert("You already picked up the airdrop");
+          }
+
+        }
+        else{
+          alert("Please connect the wallet first");
+        }
+      },false)
+
+    </script>
+
+  </body>
+</html>
